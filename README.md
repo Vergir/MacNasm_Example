@@ -1,11 +1,16 @@
-build.sh — Script to build example
+# Summary #
 
-seven.asm — Example program, calculates log(1+x / 1-x) with series expansion and compares it with C logf from math.h, and does this staff for multiple x's.
+This repo is a 'proof of concept' in writing macOS apps using NASM.
 
-util.c — small c library with some helping functions
+It is also an example in a guide on how to write such OSX executables. The guide itself is here (RU): http://txti.es/mac-nasm
 
-nasm — assembler itself
+## Files ##
 
-Launching:
-1. $ ./build.sh
-2. $ seven
+- **build.sh** - script to build executable
+- **seven.asm** - source program, it calulates *log(1+x / 1-x)* with series expansion and compares it with C standard logf(). Also does this whole thing for multiple x's
+- **util.c** - little c file which contains some auxiliary functions
+- **nasm** - assembler itself
+
+## Usage ##
+1. `$ ./build.sh`
+2. `$ ./seven`
